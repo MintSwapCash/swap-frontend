@@ -40,7 +40,7 @@ export function SwapProvider({ children }: { children: any }) {
 
     const { account } = useWeb3React();
 
-    const [token1, setToken1] = useState<string>("BNB");
+    const [token1, setToken1] = useState<string>("MINTME");
     const [token2, setToken2] = useState<string>("");
     const [token1Amount, setToken1Amount] = useState<number>(0);
     const [token2Amount, setToken2Amount] = useState<number>(0);
@@ -55,7 +55,7 @@ export function SwapProvider({ children }: { children: any }) {
 
     const initBalance = async () => {
         if (account) {
-            if (token1 !== "BNB") {
+            if (token1 !== "MINTME") {
                 Token.options.address = Tokens[token1].address;
                 setBalance(parseFloat(fromWei(await Token.methods.balanceOf(account).call())).toFixed(4).toString());
             }
