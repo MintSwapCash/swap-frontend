@@ -1,2 +1,2 @@
-export const testChain = 97;
-export const productionChain = 56;
+export const testChain = 24734;
+export const productionChain = 24734;
