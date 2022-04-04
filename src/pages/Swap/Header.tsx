@@ -4,7 +4,7 @@ import { SwapContext } from "../../contexts/Swap";
 import { fromWei } from "../../utils/convert";
 import { web3 } from "../../wallet/providers/web3";
 
-const bnbIcon = "https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/512/Binance-Coin-BNB-icon.png";
+const bnbIcon = "https://raw.githubusercontent.com/ciberdoom/updated-images-mintme.com-coin/master/build/icons/512x512.png";
 
 export default function Header() { 
     const { balance, token1 } = useContext(SwapContext);
