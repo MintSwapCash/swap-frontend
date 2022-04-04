@@ -20,7 +20,7 @@ export default function Main() {
     const history = useHistory()
 
     const toGithub = () => {
-        window.location.href = "https://github.com/nutchanonc/swap-frontend";
+        window.location.href = "https://github.com/MintSwapCash/swap-frontend";
     }
     return (
         <Background>
@@ -33,7 +33,7 @@ export default function Main() {
                         <div className="col-lg mb-3 d-flex align-items-end">
                             <div>
                                 <h1 className="text-white mb-3">Swap Pools is here</h1>
-                                <p className="text-white mb-4">Welcome to Nutchanon's DEX. This is just my playground. None of the tokens are valuable.</p>
+                                <p className="text-white mb-4">Welcome to this new MintMe DEX.</p>
                                 <div className="d-flex">
                                     <Button color={blue} backgroundColor="#fff" onClick={() => history.push("/app")}>Trade now</Button>
                                     <Button color="#000" backgroundColor="#fff" onClick={() => toGithub()}><AiFillGithub className="me-1" size="22px" />Github</Button>
@@ -46,7 +46,7 @@ export default function Main() {
             </Head>
             <div className="container">
                 <div className="mt-5 text-center">
-                    <h6>Created by Nutchanon C.</h6>
+                    <h6>Created by Agent.</h6>
                 </div>
             </div>
         </Background>
