@@ -11,7 +11,7 @@ export default function Pool() {
             <h5>Liquidity pools</h5>
             <div className="mt-3 d-flex flex-wrap">
                 <PoolIcon 
-                    token1="WBNB" 
+                    token1="WMINT" 
                     token2="LEMON"
                     address="0x427c8f51a2598082a5B61213e293a8474C08150E"
                     abi={[]}
@@ -19,7 +19,7 @@ export default function Pool() {
                     
                     />
                 <PoolIcon 
-                    token1="WBNB" 
+                    token1="WMINT" 
                     token2="KTD"
                     address="0x27835abf87e682d187e871871fA98764" // MOCK
                     abi={[]}
@@ -27,7 +27,7 @@ export default function Pool() {
                     
                     />
                 <PoolIcon 
-                    token1="WBNB" 
+                    token1="WMINT" 
                     token2="TIG"
                     address="0x27835abf87e682d187e871871fA98764" // MOCK
                     abi={[]}
@@ -35,7 +35,7 @@ export default function Pool() {
                     
                     />
                 <PoolIcon 
-                    token1="WBNB" 
+                    token1="WMINT" 
                     token2="GG"
                     address="0x27835abf87e682d187e871871fA98764" // MOCK
                     abi={[]}
