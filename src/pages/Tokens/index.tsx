@@ -1,4 +1,4 @@
-import { goodgameAddress, katradeAddress, lemonAddress, tigraAddress, token1Address, token2Address } from "../../utils/addresses";
+import { goodgameAddress, prssAddress, lemonAddress, tigraAddress, token1Address, token2Address } from "../../utils/addresses";
 import TokenBox from "./TokenBox";
 
 export default function Tokens() {
@@ -8,7 +8,7 @@ export default function Tokens() {
             <div className="d-flex flex-wrap">
                 {/* <TokenBox address={token1Address}/>
                 <TokenBox address={token2Address}/> */}
-                <TokenBox address={katradeAddress}/>
+                <TokenBox address={prssAddress}/>
                 <TokenBox address={lemonAddress}/>
                 <TokenBox address={goodgameAddress}/>
                 <TokenBox address={tigraAddress}/>
