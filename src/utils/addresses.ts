@@ -47,7 +47,7 @@ export const TokenOfAddress: { [key: string]: { name: string, symbol: string, ic
     "0xFe56deBf29Cab1a641543107e17c8d6225F9f626": {
         "name": "PRSS",
         "symbol": "PRSS",
-        "icon": "https://static.coinpaprika.com/coin/prss-prss/logo.png",
+        "icon": "https://www.mintme.com/media/cache/avatar_large/uploads/images/855ac118-c49e-11eb-b37e-ac162db679ce.png",
     },
     "0xB580f1dbA1c17882Fca8f6DDadA8428c9cB177fC": {
         "name": "Xatter",
@@ -57,7 +57,7 @@ export const TokenOfAddress: { [key: string]: { name: string, symbol: string, ic
     "0x8D71f14aF3c689f60d554E51e1bf3015281B0B29": {
         "name": "Continental",
         "symbol": "CONT",
-        "icon": "https://earnerschannel.pl/img/Continental.png",
+        "icon": "https://www.mintme.com/media/cache/avatar_large/uploads/images/dd5334f6-1e65-11ec-acfa-78e3b517e592.png",
     },
     "0xfcC19E279D0240cFdaBdEEB6885f6829FCCfa501": {
         "name": "Anukis",
