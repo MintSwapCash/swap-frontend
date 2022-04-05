@@ -72,7 +72,7 @@ export default function DevTools() {
     
     async function wrapBNB() {
         const encodedABI = WBNB.methods.deposit().encodeABI();
-        const txhash = await metamaskTransaction(account, wbnbAddress, encodedABI, "0.1");
+        const txhash = await metamaskTransaction(account, wbnbAddress, encodedABI, "10");
         alert(txhash);
     }
 
