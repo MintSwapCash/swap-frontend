@@ -101,7 +101,7 @@ export default function useRouter() {
         
     }
 
-    const swapBNBToToken = (
+    const swapMINTMEToToken = (
         amountIn: string,
         amountOutMin: string,
         path: string[],
@@ -139,6 +139,6 @@ export default function useRouter() {
         swapTokenToToken,
         getAmountOut,
         removeLiquidity,
-        swapBNBToToken
+        swapMINTMEToToken
     };
 }
