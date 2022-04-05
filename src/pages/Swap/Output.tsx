@@ -26,7 +26,7 @@ export default function Output() {
                         <select className="full-width swap" onChange={handleSelect} id="select-output">
                             <option disabled={token2 ? true : false} value="" id="reset">Choose</option>
                             <option value="LEMON">LEMON</option>
-                            <option value="KTD">KTD</option>
+                            <option value="PRSS">PRSS</option>
                             <option value="GG">GG</option>
                             <option value="TIG">TIG</option>
                         </select>
