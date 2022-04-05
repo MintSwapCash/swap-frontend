@@ -482,10 +482,10 @@
                         "src": "277:10:5",
                         "subdenomination": null,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_rational_1000000000_by_1",
-                          "typeString": "int_const 1000000000"
+                          "typeIdentifier": "t_rational_10000000_by_1",
+                          "typeString": "int_const 10000000"
                         },
-                        "value": "1000000000"
+                        "value": "10000000"
                       }
                     ],
                     "expression": {
@@ -495,8 +495,8 @@
                           "typeString": "address payable"
                         },
                         {
-                          "typeIdentifier": "t_rational_1000000000_by_1",
-                          "typeString": "int_const 1000000000"
+                          "typeIdentifier": "t_rational_10000000_by_1",
+                          "typeString": "int_const 10000000"
                         }
                       ],
                       "id": 761,
@@ -586,8 +586,8 @@
                     "src": "238:2:5",
                     "subdenomination": null,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_rational_18_by_1",
-                      "typeString": "int_const 18"
+                      "typeIdentifier": "t_rational_12_by_1",
+                      "typeString": "int_const 12"
                     },
                     "value": "12"
                   }
@@ -1047,8 +1047,8 @@
                       "lValueRequested": false,
                       "subdenomination": null,
                       "token": "number",
-                      "type": "int_const 18",
-                      "value": "18"
+                      "type": "int_const 12",
+                      "value": "12"
                     },
                     "id": 758,
                     "name": "Literal",
@@ -1086,8 +1086,8 @@
                                   "typeString": "address payable"
                                 },
                                 {
-                                  "typeIdentifier": "t_rational_1000000000_by_1",
-                                  "typeString": "int_const 1000000000"
+                                  "typeIdentifier": "t_rational_10000000_by_1",
+                                  "typeString": "int_const 10000000"
                                 }
                               ],
                               "overloadedDeclarations": [
@@ -1142,8 +1142,8 @@
                               "lValueRequested": false,
                               "subdenomination": null,
                               "token": "number",
-                              "type": "int_const 1000000000",
-                              "value": "1000000000"
+                              "type": "int_const 10000000",
+                              "value": "10000000"
                             },
                             "id": 764,
                             "name": "Literal",
