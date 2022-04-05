@@ -32,7 +32,7 @@ export default function Main() {
                         </div>
                         <div className="col-lg mb-3 d-flex align-items-end">
                             <div>
-                                <h1 className="text-white mb-3">MintMe Pools are here</h1>
+                                <h1 className="text-white mb-3">MintSwap is finally here.</h1>
                                 <p className="text-white mb-4">Welcome to this new MintMe DEX.</p>
                                 <div className="d-flex">
                                     <Button color={blue} backgroundColor="#fff" onClick={() => history.push("/app")}>Trade now</Button>
