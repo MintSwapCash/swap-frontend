@@ -59,6 +59,6 @@ export const approveMax =  async(token: string, me: string | null | undefined, t
 export const isRouterApprovedToken = async (owner: string | null | undefined, token: string) => {
     Token.options.address = token;
     const allowance = await Token.methods.allowance(owner, routerAddress).call();
-    if (fromWei(allowance) !== "100000000") return approveMax(token, owner, routerAddress);
+    if (fromWei(allowance) !== "100000000000000") return approveMax(token, owner, routerAddress);
     return
 }
