@@ -8,6 +8,7 @@ export const wmintAddress = "0x81da10dfc2c7f8185144df2bd5f950b02b561d46";
 export const routerAddress = "0x1b553148f6d80e67efdce3ab5390ec41c7f3b7dc";
 
 export const token1Address = "0xFe56deBf29Cab1a641543107e17c8d6225F9f626";
+export const token2Address = "0x8D71f14aF3c689f60d554E51e1bf3015281B0B29";
 
 export const Tokens: { [key: string]: { name: string, address: string}} = {
     "PRSS": {
