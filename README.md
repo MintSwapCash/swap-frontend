@@ -1,6 +1,6 @@
 # MintSwap Cash
 
-This project allow users to swap MintMe with created tokens on the MintMe smartchain with the implementation of liquidity pools. Smart contracts were cloned from [PancakeSwap](https://pancakeswap.finance/) (DEX on Binance Smat Chain) which originally use [Uniswap](https://uniswap.org/). This project is running on **MintMe Smartchain** for proving about liquidity pool concepts and how it works.
+This project allow users to swap MintMe with created tokens on the MintMe smartchain with the implementation of liquidity pools. Smart contracts were cloned from [PancakeSwap](https://pancakeswap.finance/) (DEX on Binance Smart Chain) which originally uses [Uniswap](https://uniswap.org/). This project is running on **MintMe Smartchain** for proving about liquidity pool concepts and how it works.
 
 ## User's guidelines
 
