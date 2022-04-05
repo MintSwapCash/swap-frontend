@@ -4,7 +4,7 @@ import { Button } from "../../components/Button";
 import useToken from "../../hooks/useToken";
 import { metamaskTransaction } from "../../hooks/useTransaction";
 import useWBNB from "../../hooks/useWBNB";
-import { goodgameAddress, katradeAddress, lemonAddress, routerAddress, tigraAddress, token1Address, token2Address, wbnbAddress } from "../../utils/addresses";
+import { goodgameAddress, prssAddress, lemonAddress, routerAddress, tigraAddress, token1Address, token2Address, wbnbAddress } from "../../utils/addresses";
 import { fromWei, toWei } from "../../utils/convert";
 
 declare let window: any;
@@ -13,7 +13,7 @@ export default function DevTools() {
 
     const { Token: Token1 } = useToken(token1Address);
     const { Token: Token2 } = useToken(token2Address);
-    const { Token: KTD } = useToken(katradeAddress);
+    const { Token: PRSS } = useToken(kprssAddress);
     const { Token: LEMON } = useToken(lemonAddress);
     const { Token: GG } = useToken(goodgameAddress);
     const { Token: TIG } = useToken(tigraAddress);
@@ -49,10 +49,10 @@ export default function DevTools() {
         const txhash = await metamaskTransaction(account, token2Address, encodedABI, "");
         return alert(`minted 10 TK2, transaction hash is ${txhash}`);
     }
-    async function mintKTD() {
-        const encodedABI = KTD.methods.faucet(toWei("10")).encodeABI();
-        const txhash = await metamaskTransaction(account, katradeAddress, encodedABI, "");
-        return alert(`minted 10 KTD, transaction hash is ${txhash}`);
+    async function mintPRSS() {
+        const encodedABI = PRSS.methods.faucet(toWei("10")).encodeABI();
+        const txhash = await metamaskTransaction(account, prssAddress, encodedABI, "");
+        return alert(`minted 10 PRSS, transaction hash is ${txhash}`);
     }
     async function mintLEMON() {
         const encodedABI = LEMON.methods.faucet(toWei("10")).encodeABI();
@@ -92,13 +92,13 @@ export default function DevTools() {
                 {/* <Button>allowance TK2 {"(owner => router)"}</Button> */}
                 <Button onClick={() => mintToken1()}>mint TK1</Button>
                 <Button onClick={() => mintToken2()}>mint TK2</Button>
-                <Button onClick={() => mintKTD()}>mint KTD</Button>
+                <Button onClick={() => mintPRSS()}>mint PRSS</Button>
                 <Button onClick={() => mintLEMON()}>mint LEMON</Button>
                 <Button onClick={() => mintGG()}>mint GG</Button>
                 <Button onClick={() => mintTIG()}>mint TIG</Button>
 
-                <Button onClick={() => wrapBNB()}>Wrap 10 BNB</Button>
-                <Button onClick={() => wbnbBalance()}>Balance of WBNB</Button>
+                <Button onClick={() => wrapBNB()}>Wrap 10 MintMe</Button>
+                <Button onClick={() => wbnbBalance()}>Balance of Wrapped MintMe</Button>
 
                 {/* <Button>approve TK1 (router)</Button> */}
                 {/* <Button>approve TK2 (router)</Button> */}
