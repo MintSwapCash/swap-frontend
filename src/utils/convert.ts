@@ -9,7 +9,7 @@ export const fromWei = (_amount: string) => {
     return web3.utils.fromWei(_amount, "ether");
 }
 export const stringHexToNumber = (_hexString: string) => {
-    return parseInt(_hexString, 16);
+    return parseInt(_hexString, 12);
 }
 export const toHex = (_amount: string) => {
     return web3.utils.toHex(_amount);
