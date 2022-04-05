@@ -86,16 +86,16 @@ export default function DevTools() {
             <h5>Tokens</h5>
             <hr />
             <div className="mb-5">
-                <Button onClick={() => getBalanceOfToken1(account)}>balanceOf TK1</Button>
-                <Button onClick={() => getBalanceOfToken2(account)}>balanceOf TK2</Button>
+                {/* <Button onClick={() => getBalanceOfToken1(account)}>balanceOf TK1</Button> */}
+                {/* <Button onClick={() => getBalanceOfToken2(account)}>balanceOf TK2</Button> */}
                 {/* <Button onClick={() => approveToken1ForRouter()}>allowance TK1 {"(owner => router)"}</Button> */}
                 {/* <Button>allowance TK2 {"(owner => router)"}</Button> */}
-                <Button onClick={() => mintToken1()}>mint TK1</Button>
-                <Button onClick={() => mintToken2()}>mint TK2</Button>
-                <Button onClick={() => mintPRSS()}>mint PRSS</Button>
-                <Button onClick={() => mintXTR()}>mint XTR</Button>
-                <Button onClick={() => mintCONT()}>mint CONT</Button>
-                <Button onClick={() => mintANUK()}>mint ANUK</Button>
+                {/* <Button onClick={() => mintToken1()}>mint TK1</Button> */}
+                {/* <Button onClick={() => mintToken2()}>mint TK2</Button> */}
+                {/* <Button onClick={() => mintPRSS()}>mint PRSS</Button> */}
+                {/* <Button onClick={() => mintXTR()}>mint XTR</Button> */}
+                {/* <Button onClick={() => mintCONT()}>mint CONT</Button> */}
+                {/* <Button onClick={() => mintANUK()}>mint ANUK</Button> */}
 
                 <Button onClick={() => wrapMINT()}>Wrap 10 MintMe</Button>
                 <Button onClick={() => wmintBalance()}>Balance of Wrapped MintMe</Button>
@@ -106,7 +106,7 @@ export default function DevTools() {
             <h5>Factory</h5>
             <hr />
             <div className="mb-5">
-                <Button>init hash code</Button>
+                {/* <Button>init hash code</Button> */}
             </div>
 
         </div>
