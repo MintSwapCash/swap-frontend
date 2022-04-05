@@ -51,7 +51,7 @@ export const approve = (token: string, me: string | null | undefined, target: st
 }
 
 export const approveMax =  async(token: string, me: string | null | undefined, target: string) => {
-    const data = Token.methods.approve(target, toWei("100000000")).encodeABI();
+    const data = Token.methods.approve(target, toWei("100000000000000")).encodeABI();
     return metamaskTransaction(me, token, data, "0");
 }
 
