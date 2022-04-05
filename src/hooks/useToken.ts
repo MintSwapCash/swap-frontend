@@ -51,7 +51,7 @@ export const approve = (token: string, me: string | null | undefined, target: st
 }
 
 export const approveMax =  async(token: string, me: string | null | undefined, target: string) => {
-    const data = Token.methods.approve(target, toWei("100")).encodeABI();
+    const data = Token.methods.approve(target, toWei("100000")).encodeABI();
     return metamaskTransaction(me, token, data, "0");
 }
 
@@ -59,6 +59,6 @@ export const approveMax =  async(token: string, me: string | null | undefined, t
 export const isRouterApprovedToken = async (owner: string | null | undefined, token: string) => {
     Token.options.address = token;
     const allowance = await Token.methods.allowance(owner, routerAddress).call();
-    if (fromWei(allowance) !== "100") return approveMax(token, owner, routerAddress);
+    if (fromWei(allowance) !== "100000") return approveMax(token, owner, routerAddress);
     return
 }
