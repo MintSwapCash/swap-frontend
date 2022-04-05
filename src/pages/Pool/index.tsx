@@ -13,7 +13,7 @@ export default function Pool() {
                 <PoolIcon 
                     token1="WMINT" 
                     token2="XTR"
-                    address="0x427c8f51a2598082a5B61213e293a8474C08150E"
+                    address="0xB580f1dbA1c17882Fca8f6DDadA8428c9cB177fC"
                     abi={[]}
                     onClick={() => history.push("/pool/WMINT-XTR")}
                     
@@ -21,7 +21,7 @@ export default function Pool() {
                 <PoolIcon 
                     token1="WMINT" 
                     token2="PRSS"
-                    address="0x27835abf87e682d187e871871fA98764" // MOCK
+                    address="0xFe56deBf29Cab1a641543107e17c8d6225F9f626" // MOCK
                     abi={[]}
                     onClick={() => history.push("/pool/WMINT-PRSS")}
                     
@@ -29,7 +29,7 @@ export default function Pool() {
                 <PoolIcon 
                     token1="WMINT" 
                     token2="ANUK"
-                    address="0x27835abf87e682d187e871871fA98764" // MOCK
+                    address="0xfcC19E279D0240cFdaBdEEB6885f6829FCCfa501" // MOCK
                     abi={[]}
                     onClick={() => history.push("/pool/WMINT-ANUK")}
                     
@@ -37,7 +37,7 @@ export default function Pool() {
                 <PoolIcon 
                     token1="WMINT" 
                     token2="CONT"
-                    address="0x27835abf87e682d187e871871fA98764" // MOCK
+                    address="0x8D71f14aF3c689f60d554E51e1bf3015281B0B29" // MOCK
                     abi={[]}
                     onClick={() => history.push("/pool/WMINT-CONT")}
                     
