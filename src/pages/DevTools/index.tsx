@@ -13,7 +13,7 @@ export default function DevTools() {
 
     const { Token: Token1 } = useToken(token1Address);
     const { Token: Token2 } = useToken(token2Address);
-    const { Token: PRSS } = useToken(kprssAddress);
+    const { Token: PRSS } = useToken(prssAddress);
     const { Token: LEMON } = useToken(lemonAddress);
     const { Token: GG } = useToken(goodgameAddress);
     const { Token: TIG } = useToken(tigraAddress);
