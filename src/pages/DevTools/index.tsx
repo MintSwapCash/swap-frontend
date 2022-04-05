@@ -56,17 +56,17 @@ export default function DevTools() {
     }
     async function mintXTR() {
         const encodedABI = XTR.methods.faucet(toWei("10")).encodeABI();
-        const txhash = await metamaskTransaction(account, lemonAddress, encodedABI, "");
+        const txhash = await metamaskTransaction(account, xatterAddress, encodedABI, "");
         return alert(`minted 10 XTR, transaction hash is ${txhash}`);
     }
     async function mintCONT() {
         const encodedABI = CONT.methods.faucet(toWei("10")).encodeABI();
-        const txhash = await metamaskTransaction(account, goodgameAddress, encodedABI, "");
+        const txhash = await metamaskTransaction(account, continentalAddress, encodedABI, "");
         return alert(`minted 10 CONT, transaction hash is ${txhash}`);
     }
     async function mintANUK() {
         const encodedABI = ANUK.methods.faucet(toWei("10")).encodeABI();
-        const txhash = await metamaskTransaction(account, tigraAddress, encodedABI, "");
+        const txhash = await metamaskTransaction(account, anukisAddress, encodedABI, "");
         return alert(`minted 10 ANUK, transaction hash is ${txhash}`);
     }
     
