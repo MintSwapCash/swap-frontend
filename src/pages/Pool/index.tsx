@@ -20,10 +20,10 @@ export default function Pool() {
                     />
                 <PoolIcon 
                     token1="WMINT" 
-                    token2="KTD"
+                    token2="PRSS"
                     address="0x27835abf87e682d187e871871fA98764" // MOCK
                     abi={[]}
-                    onClick={() => history.push("/pool/WBNB-KTD")}
+                    onClick={() => history.push("/pool/WMINT-PRSS")}
                     
                     />
                 <PoolIcon 
