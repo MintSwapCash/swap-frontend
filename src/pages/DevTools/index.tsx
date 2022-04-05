@@ -3,8 +3,8 @@ import { TiSocialGithubCircular } from "react-icons/ti";
 import { Button } from "../../components/Button";
 import useToken from "../../hooks/useToken";
 import { metamaskTransaction } from "../../hooks/useTransaction";
-import useWBNB from "../../hooks/useWBNB";
-import { goodgameAddress, prssAddress, lemonAddress, routerAddress, tigraAddress, token1Address, token2Address, wbnbAddress } from "../../utils/addresses";
+import useWMINT from "../../hooks/useWMINT";
+import { anukisAddress, prssAddress, xatterAddress, routerAddress, continentalAddress, token1Address, token2Address, wmintAddress } from "../../utils/addresses";
 import { fromWei, toWei } from "../../utils/convert";
 
 declare let window: any;
@@ -14,10 +14,10 @@ export default function DevTools() {
     const { Token: Token1 } = useToken(token1Address);
     const { Token: Token2 } = useToken(token2Address);
     const { Token: PRSS } = useToken(prssAddress);
-    const { Token: LEMON } = useToken(lemonAddress);
-    const { Token: GG } = useToken(goodgameAddress);
-    const { Token: TIG } = useToken(tigraAddress);
-    const WBNB = useWBNB(wbnbAddress);
+    const { Token: XTR } = useToken(xatterAddress);
+    const { Token: CONT } = useToken(continentalAddress);
+    const { Token: ANUK } = useToken(anukisAddress);
+    const WMINT = useWMINT(wmintAddress);
     const { account } = useWeb3React();
 
     async function getBalanceOfToken1(address: string | null | undefined) {
@@ -54,30 +54,30 @@ export default function DevTools() {
         const txhash = await metamaskTransaction(account, prssAddress, encodedABI, "");
         return alert(`minted 10 PRSS, transaction hash is ${txhash}`);
     }
-    async function mintLEMON() {
-        const encodedABI = LEMON.methods.faucet(toWei("10")).encodeABI();
+    async function mintXTR() {
+        const encodedABI = XTR.methods.faucet(toWei("10")).encodeABI();
         const txhash = await metamaskTransaction(account, lemonAddress, encodedABI, "");
-        return alert(`minted 10 LEMON, transaction hash is ${txhash}`);
+        return alert(`minted 10 XTR, transaction hash is ${txhash}`);
     }
-    async function mintGG() {
-        const encodedABI = GG.methods.faucet(toWei("10")).encodeABI();
+    async function mintCONT() {
+        const encodedABI = CONT.methods.faucet(toWei("10")).encodeABI();
         const txhash = await metamaskTransaction(account, goodgameAddress, encodedABI, "");
-        return alert(`minted 10 GG, transaction hash is ${txhash}`);
+        return alert(`minted 10 CONT, transaction hash is ${txhash}`);
     }
-    async function mintTIG() {
-        const encodedABI = TIG.methods.faucet(toWei("10")).encodeABI();
+    async function mintANUK() {
+        const encodedABI = ANUK.methods.faucet(toWei("10")).encodeABI();
         const txhash = await metamaskTransaction(account, tigraAddress, encodedABI, "");
-        return alert(`minted 10 TIG, transaction hash is ${txhash}`);
+        return alert(`minted 10 ANUK, transaction hash is ${txhash}`);
     }
     
-    async function wrapBNB() {
-        const encodedABI = WBNB.methods.deposit().encodeABI();
-        const txhash = await metamaskTransaction(account, wbnbAddress, encodedABI, "10");
+    async function wrapMINT() {
+        const encodedABI = WMINT.methods.deposit().encodeABI();
+        const txhash = await metamaskTransaction(account, wmintAddress, encodedABI, "10");
         alert(txhash);
     }
 
-    async function wbnbBalance() {
-        alert(fromWei(await WBNB.methods.balanceOf(account).call()));
+    async function wmintBalance() {
+        alert(fromWei(await WMINT.methods.balanceOf(account).call()));
     } 
 
     return (
@@ -93,12 +93,12 @@ export default function DevTools() {
                 <Button onClick={() => mintToken1()}>mint TK1</Button>
                 <Button onClick={() => mintToken2()}>mint TK2</Button>
                 <Button onClick={() => mintPRSS()}>mint PRSS</Button>
-                <Button onClick={() => mintLEMON()}>mint LEMON</Button>
-                <Button onClick={() => mintGG()}>mint GG</Button>
-                <Button onClick={() => mintTIG()}>mint TIG</Button>
+                <Button onClick={() => mintXTR()}>mint XTR</Button>
+                <Button onClick={() => mintCONT()}>mint CONT</Button>
+                <Button onClick={() => mintANUK()}>mint ANUK</Button>
 
-                <Button onClick={() => wrapBNB()}>Wrap 10 MintMe</Button>
-                <Button onClick={() => wbnbBalance()}>Balance of Wrapped MintMe</Button>
+                <Button onClick={() => wrapMINT()}>Wrap 10 MintMe</Button>
+                <Button onClick={() => wmintBalance()}>Balance of Wrapped MintMe</Button>
 
                 {/* <Button>approve TK1 (router)</Button> */}
                 {/* <Button>approve TK2 (router)</Button> */}
