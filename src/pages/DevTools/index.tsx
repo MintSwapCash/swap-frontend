@@ -103,7 +103,7 @@ export default function DevTools() {
                 {/* <Button>approve TK1 (router)</Button> */}
                 {/* <Button>approve TK2 (router)</Button> */}
             </div>
-            <h5>Factory</h5>
+            {/* <h5>Factory</h5> */}
             <hr />
             <div className="mb-5">
                 {/* <Button>init hash code</Button> */}
