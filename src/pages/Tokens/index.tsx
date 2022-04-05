@@ -1,4 +1,4 @@
-import { goodgameAddress, prssAddress, lemonAddress, tigraAddress, token1Address, token2Address } from "../../utils/addresses";
+import { continentalAddress, prssAddress, xatterAddress, anukisAddress, token1Address, token2Address } from "../../utils/addresses";
 import TokenBox from "./TokenBox";
 
 export default function Tokens() {
@@ -9,9 +9,9 @@ export default function Tokens() {
                 {/* <TokenBox address={token1Address}/>
                 <TokenBox address={token2Address}/> */}
                 <TokenBox address={prssAddress}/>
-                <TokenBox address={lemonAddress}/>
-                <TokenBox address={goodgameAddress}/>
-                <TokenBox address={tigraAddress}/>
+                <TokenBox address={xatterAddress}/>
+                <TokenBox address={continentalAddress}/>
+                <TokenBox address={anukisAddress}/>
             </div>
         </div>
     )
