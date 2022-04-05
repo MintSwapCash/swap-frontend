@@ -1,14 +1,14 @@
-export const factoryAddress = "0xDE77e18f791c6F4BE9070E4202694D1cBe0ceC2D";
+export const factoryAddress = "0x2897b4089939f84f7df62095eafec6a95271f6f5";
 export const token1Address = "0xd50180Ca4E01e8a64A6acD7A601E7F807c0d9d85";
 export const token2Address = "0x07836EfbD63772E9dE784A550FE4de3441e430B4";
-export const katradeAddress = "0x42dDd4347Ab8849bC81d4c3025A7de0585d5c890";
+export const prssAddress = "0xFe56deBf29Cab1a641543107e17c8d6225F9f626";
 export const lemonAddress = "0x0BF2739eE043E8d9e227929d3E81e4a6Da1961cb";
 export const goodgameAddress = "0xcFB940CA511799AF60d8cA3534A1467927080008";
 export const tigraAddress = "0xF39364835b9E7C11E834B6CFAFfA52ab168E3b28";
 
-export const wbnbAddress = "0x50a8911ef76835E4D9dE395398bF0E2D89bee26B";
+export const wbnbAddress = "0x81da10dfc2c7f8185144df2bd5f950b02b561d46";
 
-export const routerAddress = "0x335996Fe6B1b99F9C6FF6CfEB08e152404C1E22c";
+export const routerAddress = "0x1b553148f6d80e67efdce3ab5390ec41c7f3b7dc";
 
 
 export const Tokens: { [key: string]: { name: string, address: string}} = {
@@ -20,9 +20,9 @@ export const Tokens: { [key: string]: { name: string, address: string}} = {
         "name": "Token2",
         "address": "0x07836EfbD63772E9dE784A550FE4de3441e430B4"
     },
-    "KTD": {
-        "name": "Katrade",
-        "address": "0x42dDd4347Ab8849bC81d4c3025A7de0585d5c890"
+    "PRSS": {
+        "name": "PRSS",
+        "address": "0xFe56deBf29Cab1a641543107e17c8d6225F9f626"
     },
     "LEMON": {
         "name": "LemonCoin",
@@ -36,9 +36,9 @@ export const Tokens: { [key: string]: { name: string, address: string}} = {
         "name": "TIGRA",
         "address": "0xF39364835b9E7C11E834B6CFAFfA52ab168E3b28"
     },
-    "WBNB": {
-        "name": "Wrapped BNB",
-        "address": "0x50a8911ef76835E4D9dE395398bF0E2D89bee26B"
+    "WMINT": {
+        "name": "Wrapped MintMe",
+        "address": "0x81da10dfc2c7f8185144df2bd5f950b02b561d46"
     },
     "BNB": {
         "name": "BNB",
@@ -48,9 +48,9 @@ export const Tokens: { [key: string]: { name: string, address: string}} = {
 }
 
 export const TokenOfAddress: { [key: string]: { name: string, symbol: string, icon: string}} = {
-    "0x50a8911ef76835E4D9dE395398bF0E2D89bee26B": {
-        "name": "Wrapped BNB",
-        "symbol": "WBNB",
+    "0x81da10dfc2c7f8185144df2bd5f950b02b561d46": {
+        "name": "Wrapped MintMe",
+        "symbol": "WMINT",
         "icon": "",
     },
     "0xd50180Ca4E01e8a64A6acD7A601E7F807c0d9d85": {
@@ -63,10 +63,10 @@ export const TokenOfAddress: { [key: string]: { name: string, symbol: string, ic
         "symbol": "TK2",
         "icon": "",
     },
-    "0x42dDd4347Ab8849bC81d4c3025A7de0585d5c890": {
-        "name": "Katrade",
-        "symbol": "KTD",
-        "icon": "https://i1.wp.com/www.youthyear.org/wp-content/uploads/2016/09/mint-green-background.jpg?fit=1200%2C887&ssl=1&w=640",
+    "0xFe56deBf29Cab1a641543107e17c8d6225F9f626": {
+        "name": "PRSS",
+        "symbol": "PRSS",
+        "icon": "https://static.coinpaprika.com/coin/prss-prss/logo.png",
     },
     "0x0BF2739eE043E8d9e227929d3E81e4a6Da1961cb": {
         "name": "LemonCoin",
